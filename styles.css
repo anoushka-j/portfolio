@@ -8,7 +8,6 @@ body {
 }
 
 header {
-    background: ;
     background-color: #f5dae2;
     padding: 1rem 0;
     text-align: center;
@@ -39,7 +38,6 @@ nav ul li a {
 section {
     padding: 2rem 1rem;
     max-width: 800px;
-    margin-top: 30rem;
     margin: 0 auto;
 }
 
