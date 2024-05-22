@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+#left_name, #right_name {
+    margin-top: 17rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Libre Baskerville", serif;
+
+}
+
+.left-side {
+    color : #DB4C77;
+    background-color: #f9c9e2;
+
+}
+.right-side {
+    color : #10559A;
+    background-color: #c9dcf9;
+
+}
+.left-side, .right-side {
+    flex: 1;
+    padding: 20px;
+}
+
+#left_link, #right_link {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+
+#left_link {
+    color : #DB4C77;
+}
+
+#right_link {
+    color : #10559A;
+
+}
