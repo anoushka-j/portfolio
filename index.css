@@ -17,7 +17,6 @@ body, html {
     flex: 1;
     display: grid;
     place-items: center;
-    text-align: center;
     margin-top: 35%;
 
 }
@@ -25,7 +24,6 @@ body, html {
 .left-side {
     color : #DB4C77;
     background-color: #f9c9e2;
-
 }
 .right-side {
     color : #10559A;
@@ -34,20 +32,24 @@ body, html {
 }
 .left-side, .right-side {
     flex: 1;
+    padding: 20px;
+    text-align: center;
 }
 
 #left_link, #right_link {
     font-family: "Libre Baskerville", serif;
     font-style: italic;
-    text-align: center;
     text-decoration: underline;
     font-size: 20px;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 541e3b2f48fd71ff81c7121d8f6cf6c574b46983
 }
 
 #left_link {
@@ -56,5 +58,4 @@ body, html {
 
 #right_link {
     color : #10559A;
-
 }
