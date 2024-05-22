@@ -1,14 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f5dae2;
     color: #333;
 }
 
 header {
-    background-color: #f5dae2;
     padding: 1rem 0;
     text-align: center;
+}
+
+.anoushka-background {
+    background-color: #f5dae2;
+}
+
+.amy-background {
+    background-color: #c9dcf9;
 }
 
 img {
@@ -70,7 +76,10 @@ ul li {
 }
 
 #projects {
-    margin-top: 2rem;
+    background: #fff;
+    padding: 2rem;
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project {
@@ -83,7 +92,7 @@ ul li {
 #contact {
     background: #fff;
     padding: 2rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
