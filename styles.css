@@ -7,6 +7,11 @@ body {
     color: #333;
 }
 
+#main_name{
+    font-size: 50;
+    color: white;
+}
+
 header {
     background: ;
     background-color: #f5dae2;
