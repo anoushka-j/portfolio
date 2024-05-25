@@ -6,25 +6,26 @@
         <meta name="author" content="Amy Huang & Anoushka Jawale">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Developer Portfolio</title>
+
         <link rel="stylesheet" href="../css/styles.css">
     </head>
 
     <body class="amy-background">
+        <!--HEADER-->
         <header class="amy-background">
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <button onclick="window.location.href='index.html'">Home</button>
+                <button onclick="window.location.href='#resume'">Resume</button>
+                <button onclick="window.location.href='#projects'">Projects</button>
+                <button onclick="window.location.href='#contact'">Contact</button>
             </nav>
         </header>
 
+        <!--SECTION CONTENTS: RESUME-->
         <section id="resume">
-            <h1>Amy Huang</h1>
-
-            <p>Software Developer</p>
+            <h1 style="color: #10559A;">Amy Huang</h1>
+            <p id="subtitle">Software Developer</p>
+            <hr>
 
             <h2>Relevant Experience</h2>
             <div class="resume-item">
@@ -65,7 +66,8 @@
             </ul>
         </section>
 
-        <section id="projects">
+        <!--SECTION CONTENTS: PROJECTS-->
+        <section id="projects" class="following-sections">
             <h2>Projects</h2>
             <div class="project">
                 <h3>MEALER Android Application</h3>
@@ -74,13 +76,15 @@
             </div>
         </section>
 
-        <section id="contact">
+        <!--SECTION CONTENTS: CONTACT INFORMATION-->
+        <section id="contact" class="following-sections">
             <h2>Contact</h2>
             <p>Email: ahuan106@uottawa.ca</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/a03huang/">Amy Huang</a></p>
             <p>GitHub: <a href="https://github.com/amyhuang8">amyhuang8</a></p>
         </section>
 
+        <!--FOOTER-->
         <footer>
             <p>&copy; 2024 Amy Huang. All rights reserved.</p>
         </footer>
