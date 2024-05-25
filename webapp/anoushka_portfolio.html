@@ -6,25 +6,24 @@
         <meta name="author" content="Anoushka Jawale & Amy Huang">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Developer Portfolio</title>
+
         <link rel="stylesheet" href="../css/styles.css">
     </head>
 
     <body class="anoushka-background">
         <header class="anoushka-background">
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <button onclick="window.location.href='index.html'">Home</button>
+                <button onclick="window.location.href='#resume'">Resume</button>
+                <button onclick="window.location.href='#projects'">Projects</button>
+                <button onclick="window.location.href='#contact'">Contact</button>
             </nav>
         </header>
 
         <section id="resume">
-            <h1>Anoushka Jawale</h1>
-
-            <p>AI Developer/Engineer</p>
+            <h1 style="color: #DB4C77;">Anoushka Jawale</h1>
+            <p id="subtitle">AI Developer/Engineer</p>
+            <hr>
 
             <h2>Relevant Experience</h2>
             <div class="resume-item">
@@ -64,7 +63,7 @@
             </ul>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="following-sections">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Pulsar Star Detection with Binary Classification</h3>
@@ -73,7 +72,7 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="following-sections">
             <h2>Contact</h2>
             <p>Email: anoushkajawale@gmail.com</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/anoushka-j-3a0849224/">Anoushka Jawale</a></p>

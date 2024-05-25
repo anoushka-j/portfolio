@@ -4,9 +4,20 @@ body {
     color: #333;
 }
 
-header {
-    padding: 1rem 0;
-    text-align: center;
+h1 {
+    font-size: 24pt;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+#subtitle {
+    padding-top: 0;
+    margin-bottom: 24px;
+    margin-top: 0;
 }
 
 .anoushka-background {
@@ -17,40 +28,75 @@ header {
     background-color: #c9dcf9;
 }
 
+/* IMAGE STYLES */
 img {
     width: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
-nav ul {
-    list-style: none;
+/* LIST STYLES */
+ul {
+    padding: 0;
+    list-style-type: none;
 }
 
-nav ul li {
+ul li {
+    background: #eee;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+/* HEADER & FOOTER STYLES */
+header {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    margin: 0.5rem;
+}
+nav button {
+    background: #eee;
+    padding: 0.5rem;
     display: inline;
     margin: 0 10px;
-}
-
-nav ul li a {
     color: black;
-    text-decoration: none;
+    border: none;
+    border-radius: 10%;
+    font-size: 14pt;
 }
 
+nav button:hover {
+    background-color: #de81af;
+    cursor: pointer;
+}
+
+/* SECTION STYLES */
 section {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#resume {
+    border-radius: 1%;
     background: #fff;
     padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+.following-sections {
+    margin-top: 4rem;
+}
+
+/* RESUME SECTION STYLES */
 .resume-item {
     margin-bottom: 2rem;
     text-align: left;
@@ -64,43 +110,10 @@ section {
     margin: 0.5rem 0;
 }
 
-ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-ul li {
-    background: #eee;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-}
-
-#projects {
-    background: #fff;
-    padding: 2rem;
-    margin-top: 4rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+/* PROJECT SECTION STYLES */
 .project {
     background: #fff;
     padding: 1rem;
     margin-bottom: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#contact {
-    background: #fff;
-    padding: 2rem;
-    margin-top: 4rem;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
 }
