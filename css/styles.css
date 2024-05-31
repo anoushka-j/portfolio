@@ -21,12 +21,6 @@ h2 {
     margin-top: 0;
 }
 
-#graph {
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
 .anoushka-background {
     background-color: #f9c9e2;
 }
@@ -38,6 +32,12 @@ h2 {
 /* IMAGE STYLES */
 img {
     width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.graph {
+    width: 100%;
     display: block;
     margin: auto;
 }
