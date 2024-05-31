@@ -21,6 +21,12 @@ h2 {
     margin-top: 0;
 }
 
+#graph {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
 .anoushka-background {
     background-color: #f9c9e2;
 }

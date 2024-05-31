@@ -69,11 +69,68 @@
         <section id="projects" class="following-sections">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Pulsar Star Detection with Binary Classification</h3>
+                <h3>1) Pulsar Star Detection with Binary Classification</h3>
+                <p>🔭 Predicting pulsar stars with machine learning 🔭</p>
                 <img src="../resources/pulsar.png" alt="Image of a Pulsar star imagined">
                 <p>Made with data taken from Kaggle, I used a binary classification model from scikit-learn to classify whether certain characteristics of radio signals received from space could be attributed to pulsar stars.</p>
+                <h2 id="gathering-domain-knowledge">Technical Description/Gathering Domain Knowledge</h2>
+                <p><strong>Introduction</strong></p>
+                <p>The subject of this dataset are pulsar stars. In order to understand the features of the dataset, it is helpful to have some domain knowledge of the topic. </p>
+                <p>Pulsars, short for “pulsating radio stars” are well described by their given name. Pulsars are a type of highly magnetized, rapidly rotating neutron star, which is a very dense type of star formed when an extremely large star undergoes a supernova explosion at the end of its life. <em>This supernova explosion is due to the star collapsing under the weight of its own gravity.</em> </p>
+                <p>The rapidly rotating nature of pulsars provide an explanation as to why they are so named: as they rotate, sometimes completing a full rotation in a matter of milliseconds to seconds, they appear to pulse periodically as they appear in our line of sight here on Earth. </p>
+                <p>The highly magnetized nature of pulsars (which can have magnetic fields up to trillions of times stronger than that of our own Earth’s) is caused due to their rapid rotation. Firstly, the types of massive stars that tend to become pulsars in the first place usually have significant magnetic fields to begin with. Following the core collapse of the star (having exhausted its nuclear fuel) under its own gravitational pull, the <strong>conservation of angular momentum</strong> is a concept that can be seen. As the star collapses, its radius (and other measurements) shrink rapidly, causing the remnants of the star to rotate faster. The core contracts as it spins faster, the progenitor star’s magnetic field becomes more concentrated and intense, in a process called <strong>magnetic flux conservation.</strong> </p>
+                <p>As the remnants form the neutron star, the intensified magnetic field interacts with the charged particles around it (from the star’s collapse), causing them to emit beams of radiation along the star’s magnetic poles. These beams are what form the pulses of pulsars, and are what give them this name. </p>
+                <h3 id="-integrated-profile-"><strong>Integrated Profile</strong></h3>
+                <p>An integrated profile is the time averaged (average intensity of the observed signal). In the context of pulsar observations, the integrated profile provides a clearer and more representative view of the pulsar&#39;s emission behaviour over its rotational period by time-averaging the data collected during multiple rotations. Comparing the integrated profile of the classified non-pulsars and pulsars could provide insight into which types of signal intensity generates each and if there is a pattern. </p>
+                <h3 id="dn-snr-curve">DN-SNR Curve</h3>
+                <p>A DN-SNR curve, often referred to as a &quot;Digital Number-Signal-to-Noise Ratio&quot; curve, is a graphical representation used in the context of image processing and remote sensing to assess the quality of digital images or data acquired from sensors. It plots the Signal-to-Noise Ratio (SNR) against the Digital Number (DN) values for pixels in an image.</p>
+                <p>Here&#39;s what the components of a DN-SNR curve represent:</p>
+                <p>Digital Number (DN): In remote sensing or digital imaging, the DN represents the numerical value assigned to each pixel in the image. It typically corresponds to the pixel&#39;s brightness or intensity level. DNs can range from 0 (e.g., representing complete darkness) to a maximum value (e.g., representing full brightness or saturation).</p>
+                <p>Signal-to-Noise Ratio (SNR): SNR is a measure of the quality of the signal (useful information) in an image compared to the noise (unwanted interference or random variations). In the context of remote sensing or imaging, SNR quantifies how distinguishable the useful information (e.g., features on the ground) is from random variations or noise in the image. SNR is usually expressed in decibels (dB) and is calculated as:</p>
+                <p>SNR (dB) = 10 * log10(Signal Power / Noise Power)
+                Signal Power represents the power of the signal (useful information).
+                Noise Power represents the power of the noise.
+                The DN-SNR curve shows how the SNR varies across different DN values in an image. Typically, you&#39;ll find that the SNR is higher for brighter or more intense pixels and lower for darker pixels. The curve can help analysts and researchers understand the image quality, identify the dynamic range of the sensor, and assess the trade-offs between capturing dim details and avoiding saturation (i.e., pixels with the maximum DN value).</p>
+                <p><strong>Features:</strong></p>
+                <ol>
+                <li>Mean of the integrated profile.</li>
+                <li>Standard deviation of the integrated profile.</li>
+                <li>Excess kurtosis of the integrated profile.</li>
+                <li>Skewness of the integrated profile.</li>
+                <li>Mean of the DM-SNR curve.</li>
+                <li>Standard deviation of the DM-SNR curve.</li>
+                <li>Excess kurtosis of the DM-SNR curve.</li>
+                <li>Skewness of the DM-SNR curve.</li>
+                <li>Class (Target Variable)</li>
+                </ol>
+                <p>To model the features to determine the most relevant features to the model, plots such as the following were generated:</p>
+                <img id="graph" src="../resources/plot.png">
+                <img id="graph" src="../resources/heatmap.png">
+                <img id="graph" src="../resources/boxplot.png">
+                <p>Making the plots allowed me to know which features were most important to use to train the model, especially using the heatmap and box plot.</p>
+                <p>The following is a code snippet that shows the libraries I used for this project. The use of IterativeImputer to fill in missing values, and the sklearn.metrics to ensure adequete performance of the model. The DecisionTreeClassifier and Logistic Regression were the models used for this prediction.</p>
+                <img id="graph" src="../resources/code.png" alt="Image of a Pulsar star imagined">
+
+            </div>
+            <div class="project">
+                <h3>2) Bag of Words model Training</h3>
+                <img id="graph" src="../resources/project2code.png" alt="Image of a Pulsar star imagined">
+                <p>The Bag of Words model treats a text (such as a sentence or a document) as a collection of individual words, disregarding grammar and word order but keeping multiplicity. The basic idea is to create a vocabulary of all the unique words in the text data and then represent each document as a vector in which each element corresponds to a word from the vocabulary, with the value being the frequency (or sometimes just the presence) of that word in the document.
+                    The above image contains the following steps: 
+                    <ul>
+                        <li>Tokenization: Split the text into words (tokens).
+                        </li>
+                        <li>Normalization: Convert words to lowercase to ensure case insensitivity.
+                        </li>
+                        <li>Removal of Stop Words: Optionally, remove common words that may not carry significant meaning (e.g., "and", "the").
+                        </li>
+                        <li>Vocabulary Building: Create a list of all unique words (vocabulary) from the processed text data.</li>
+                        <li>Vector Representation: For each document, create a vector of the same length as the vocabulary.</li>
+                    </ul>
+                    <p>Now each sentence can be categorized into belonging into either the BOOK or CLOTHING category.</p>
             </div>
         </section>
+  
 
         <!--SECTION CONTENTS: CONTACT INFORMATION-->
         <section id="contact" class="following-sections">
