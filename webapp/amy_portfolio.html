@@ -96,6 +96,41 @@
                     <li>Managed server requests (e.g. db connections) with Java servlets</li>
                 </ul>
             </div>
+            <div class="project">
+                <h3>3) Pacman Game</h3>
+                <img class="graph" src="../resources/gameplay.png" alt="image from pacman gameplay">
+                <p>This Pacman game was made with JavaScript, HTML and CSS. It includes a user-friendly interface, as shown in the images below:</p>
+                <img class="graph" src="../resources/main_menu_instructions.png" alt="image from pacman gameplay">
+                <img class="graph" src="../resources/game_over.png" alt="image from pacman gameplay">
+                <p>The following explains the technical aspects of creating this game:</p>
+                    <ul>
+                        <li>HTML: Used to create and divide the elements of the game, including the header, footer and game play area in the middke. 
+                        </li>
+                        <li>CSS: Used to style the elements in the HTML, with id's, classes and attributes 
+                        </li>
+                        <li>JavaScript: The following functions were used: 
+                            <ul>
+                                <li>startGame(): This function starts the game by initiating the ghost movement interval and listening for player key events.</li>
+                                <li>endGame(): This function ends the game by stopping the ghost movement interval, stopping continuous movement, and removing key event listeners.</li>
+                                <li>displayGameOver(): This function displays the game over modal.</li>
+                                <li>displayInstructions(): This function displays the instructions modal.</li>
+                                <li>resetGame(): This function resets the game by re-initializing game variables and starting a new game.</li>
+                                <li>createGame(n): This function implements the game board.</li>
+                                <li>renderGame(game): This function renders the game board to the HTML.</li>
+                                <li>moveLeft(game): This function shifts the Pacman char one position to the left.</li>
+                                <li>moveRight(game): This function shifts the Pacman char one position to the right.</li>
+                                <li>moveLeftContinuous(game): This function moves the Pacman char to the left.</li>
+                                <li>moveRightContinuous(game): This function moves the Pacman char to the right.</li>
+                                <li>processMove(cellContents): This function processes the move and updates the score.</li>
+                                <li>advanceLevel(): This function advances the game to the next level and increases the speed of the ghost.</li>
+                                <li>moveGhost(): This function moves the ghost character toward Pacman.</li>
+                                <li>handleKeyDown(event): This function handles keydown events for Pacman movement.</li>
+                                <li>getRandomInt(min, max): This is a helper function that generates random ints between the given number params.</li>
+                              </ul>
+                              
+                        </li>
+                    </ul>
+            </div>
         </section>
 
         <!--SECTION CONTENTS: CONTACT INFORMATION-->
