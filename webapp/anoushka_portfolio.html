@@ -129,10 +129,10 @@
                     <p>Now each sentence can be categorized into belonging into either the BOOK or CLOTHING category.</p>
             </div>
             <div class="project">
-                <h3>3) Pacman Game with AJAX</h3>
+                <h3>3) Pacman Game with AJAX and MySQL</h3>
                 <img class="graph" src="../resources/gameplay.png" alt="image from pacman gameplay">
-                <p>This Pacman game was made with PHP, JavaScript, HTML, and CSS. It includes a user-friendly interface, as shown in the images below:</p>
-                <img class="graph" src="../resources/leaderboard_design.png" alt="image from pacman leaderboard">
+                <p>This Pacman game was made with PHP, AJAX, MySQL, JavaScript, HTML, and CSS. It includes a user-friendly interface, as shown in the images below:</p>
+                <img class="graph" src="../resources/l_scores.png" alt="image from pacman leaderboard">
                 <br>
                 <img class="graph" src="../resources/main_menu_instructions.png" alt="image from pacman instructions">
                 <br>
@@ -142,6 +142,7 @@
                     <li>HTML: Used to create and divide the elements of the game, including the header, footer, and gameplay area in the middle.</li>
                     <li>CSS: Used to style the elements in the HTML, with IDs, classes, and attributes.</li>
                     <li>AJAX: Utilizes AJAX to communicate with a PHP backend, enabling seamless data exchange for game state management, leaderboard updates, and resetting game sessions.</li>
+                    <li>MySQL: MySQL database is used to store user information (their username and high score is especially important for the leaderboard). The pacman database is used to help complete the 'Clear Leaderboard' operation that only the admin can do, in which th data gets erased.</li>
                     <li>JavaScript: The following functions were used:
                         <ul>
                             <li>startGame(): This function starts the game by initiating the ghost movement interval and listening for player key events.</li>
@@ -167,7 +168,7 @@
                 <ul>
                     <li>Dynamic Rendering - Utilizes JavaScript to dynamically render game elements such as Pacman, ghosts, fruits, and pellets based on game state.</li>
                     <li>AJAX Interactions - Implements AJAX to communicate with a PHP backend for seamless data exchange, enabling functionalities such as leaderboard updates and game state management.</li>
-                    <li>Leaderboard - Includes a leaderboard feature that displays top scores fetched from the server, enhancing competitiveness among players.</li>
+                    <li>Leaderboard - Includes a leaderboard feature that displays top scores fetched from the Pacman database (MySQL), enhancing competitiveness among players. It can be cleared when the admin logs in and completes the 'Clear Leaderboard' operation.</li>
                 </ul>
             </div>
             
